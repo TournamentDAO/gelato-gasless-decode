@@ -12,8 +12,8 @@ const NETWORK_HTTPS_URL_POLYGON = "https://polygon-mumbai-bor-rpc.publicnode.com
 // Original sender (user): 0x407F1a8FE09Cb15c995B6dBB2Fb534C0d52c41B4
 // Original receiver (contract): 0x2Bab5e29851c6eAf6E415851A9246614aB7C7cb1
 const REWARD_CLAIM_BASE_HASH =
-  "0x3510113a08aa6ede8fd673cf3b0f3fa4161b0bd00f34ec5724adc809634e88f6";
-const NETWORK_HTTPS_URL_BASE = "https://base-sepolia-rpc.publicnode.com";
+  "0x69b14f1e13122a276057e81caacfedf5ea12490a8fa37ba649ae281a315c9d5b";
+const NETWORK_HTTPS_URL_BASE = "https://base-rpc.publicnode.com";
 
 const main = async () => {
   console.log("Inside main()....")
