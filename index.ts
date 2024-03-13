@@ -6,7 +6,7 @@ import { EXEC_WITH_SIGS_FACET, GELATO_RELAY_1BALANCE_ERC2771 } from "./abis";
 // Original sender (user): 0x17b135575639A9B55F7EBb74FbED5f727eD08E8a
 // Original receiver (contract): 0x90C1F264950a3baD50b0D968c46418194063B263
 const TOURNAMENT_MUMBAI_HASH =
-  "0x353b0563ea7f23f44b6347d043e8e6f0963582442c0b453f44a5f3204ea5d5fc";
+  "0xebc226bc7e9ce8a9f623a4a1aa7ea8f5e0aeb12c89d73a1cb185e3258ec7b722";
 const NETWORK_HTTPS_URL_POLYGON = "https://rpc-mumbai.maticvigil.com";
 
 // Original sender (user): 0x407F1a8FE09Cb15c995B6dBB2Fb534C0d52c41B4
