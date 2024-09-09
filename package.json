@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --pretty --transpile-only index.ts",
+    "dev": "ts-node-dev --respawn --pretty --transpile-only biconomy.ts",
     "build": "tsc -p .",
-    "start": "node ./dist/index.ts"
+    "start": "node ./dist/biconomy.ts"
   },
   "keywords": [],
   "author": "",
