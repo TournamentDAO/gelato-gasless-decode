@@ -1,6 +1,6 @@
 
 import { ethers } from "ethers";
-import { BICONOMY_ABI, EXEC_WITH_SIGS_FACET, GELATO_RELAY_1BALANCE_ERC2771 } from "./abis";
+import { BICONOMY_ABI } from "./abis";
 
 // Transaction type 4 = Spin the wheel (mantle)
 // Chain = MANTLE MAINNET
@@ -17,8 +17,9 @@ import { BICONOMY_ABI, EXEC_WITH_SIGS_FACET, GELATO_RELAY_1BALANCE_ERC2771 } fro
 // https://rpc.mantle.xyz
 
 
-const TX_HASH =
-  "0xa0a6c778793f45dd315161f75137c96585cb93a2d67aceda3a789336914b53fd";
+const TOURNAMENT_TX_HASH =
+  "0x1935871aae1dcfb4bc418e3993b9daba6e178d56f0f6af326d741b0c71f36e81";
+const SPIN_TX_HASH = "0x843e7d5aaa76a4e08cd5797deeadc3a1996bac39be5e27c10cdfa1bd1a24ba36"  
 const NETWORK_HTTPS_URL = "https://rpc.mantle.xyz";
 
 export const biconomyMain = async () => {
@@ -28,7 +29,7 @@ export const biconomyMain = async () => {
 
   let biconomyInterface = new ethers.Interface(BICONOMY_ABI)
 
-  let transaction = await provider.getTransaction(TX_HASH); // Change hash here
+  let transaction = await provider.getTransaction(TOURNAMENT_TX_HASH); // Change hash here
 
   if (transaction != null) {
     let decodedInput = biconomyInterface.parseTransaction({
